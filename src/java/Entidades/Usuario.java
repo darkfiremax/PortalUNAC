@@ -6,11 +6,12 @@ package Entidades;
 
 /**
  *
- * @author Jonathan Pacheco
+ * @author Jonathan
  */
 public class Usuario {
 
-    String email, clave, nombre, apellido, telefono, genero;
+    String email, clave, nombre, apellido, telefono, genero, 
+           descripcionPerfil,descripcionEstado, descripcionGenero;
     int idPerfil, estado;
 
     public Usuario(String email, String clave, String nombre, String apellido, String telefono, String genero, int idPerfil, int estado) {
@@ -67,11 +68,11 @@ public class Usuario {
         this.genero = genero;
     }
 
-    public int getidPerfil() {
+    public int getIdPerfil() {
         return idPerfil;
     }
 
-    public void setidPerfil(int idPerfil) {
+    public void setIdPerfil(int idPerfil) {
         this.idPerfil = idPerfil;
     }
 
@@ -90,5 +91,28 @@ public class Usuario {
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
-       
+
+    public String getDescripcionEstado() {
+        return descripcionEstado;
+    }
+
+    public void setDescripcionEstado(String descripcionEstado) {
+        this.descripcionEstado = descripcionEstado;
+    }
+
+    public String getDescripcionGenero() {
+        return descripcionGenero;
+    }
+
+    public void setDescripcionGenero(String descripcionGenero) {
+        this.descripcionGenero = descripcionGenero;
+    }
+
+    public String getDescripcionPerfil() {
+        return descripcionPerfil;
+    }
+
+    public void setDescripcionPerfil(String descripcionPerfil) {
+        this.descripcionPerfil = descripcionPerfil;
+    }
 }
